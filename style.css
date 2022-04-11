@@ -1,0 +1,794 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    font-size: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #ffff;
+    overflow-x: hidden;
+    background: #141d26;
+    list-style: none;
+}
+
+header{
+    height: 80px;
+    background-color: #c51f5d;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px; 
+    font-weight: bolder;
+    margin: 20px;
+}
+
+.welcome{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+}
+
+.welcome h1{
+    color: #ffff;
+    text-align: center;
+    font-size: 56px;
+    margin-left: 100px;
+    z-index: 1;
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: auto;
+}
+
+
+span::before{
+    content: '';
+    font-weight: bolder;
+    font-size: 56px;
+    color: #ffff;
+    animation: animate infinite 8s;
+    z-index: 1;
+}
+
+@keyframes animate{
+    0% {
+        content: 'Future';
+    }
+    25% {
+        content: 'Decentralization';
+    }
+    50% {
+        content: 'Privacy';
+    }
+    75% {
+        content: 'Intelligence';
+    }
+    100% {
+        content: 'Future';
+    }
+}
+
+.first-title{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+.first-title h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+#web1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#web1 .web1-img{
+    display: inline-flex;
+    margin-left: 100px;
+} 
+
+#web1 .web1-img img{
+    width: 360px;
+    height: 360px;
+
+}
+
+#web1 .web1-text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+#web1 .web1-text h2{
+    display: flex;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color:#c51f5d
+}
+
+#web1 .web1-title-mobile{
+    display: none;
+}
+
+#web1 .web1-text p{
+    display: flex;
+    font-size: 20px;
+}
+
+#web1 .web1-text h3{
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+#web1 .web1-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    list-style: none;
+}
+
+#web1 .web1-list li p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#web2{
+    display: flex;
+    width: 100%;
+    padding-top: 150px;
+}
+
+
+#web2 .web2-text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    margin-left: 100px;
+}
+
+#web2 .web2-text h2{
+    display: flex;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #c51f5d;
+}
+
+#web2 .web2-title-mobile{
+    display: none;
+}
+
+#web2 .web2-text p{
+    display: flex;
+    font-size: 20px;
+}
+
+#web2 .web2-text h3{
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+#web2 .web2-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    list-style: none;
+}
+
+#web2 .web2-list li p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#web2 .web2-img{
+    display: inline-flex;
+    margin-right: 80px;
+    margin-top: 20px;
+} 
+
+#web2 .web2-img img{
+    width: 360px;
+    height: 360px;
+
+}
+
+#web3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 150px;
+}
+
+#web3 .web3-text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#web3 .web3-text h2{
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #c51f5d;
+}
+
+#web3 .web3-title-mobile{
+    display: none;
+}
+
+#web3 .web3-text p{
+    text-align: center;
+    display: flex;
+    font-size: 22px;
+}
+
+#web3 .web3-examples h3{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.web3-semantic,
+.web3-ai,
+.web3-3d,
+.web3-connectivity,
+.web3-ubiquity
+{
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+    margin-left: 140px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.web3-semantic-text,
+.web3-ai-text,
+.web3-3d-text,
+.web3-connectivity-text,
+.web3-ubiquity-text
+{
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+}
+.web3-semantic-text h3,
+.web3-ai-text h3,
+.web3-3d-text h3,
+.web3-connectivity-text h3,
+.web3-ubiquity-text h3{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.web3-semantic-text p,
+.web3-ai-text p,
+.web3-3d-text p,
+.web3-connectivity-text p,
+.web3-ubiquity-text p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.semantic-img,
+.ai-img,
+.threed-img,
+.connectivity-img,
+.ubiquity-img
+{
+    display: inline-flex;
+    margin-left: 200px;
+    margin-right: 80px;
+}
+
+.semantic-img img,
+.ai-img img,
+.threed-img img,
+.connectivity-img img,
+.ubiquity-img img{
+    width: 220px;
+    height: 220px;
+}
+
+.semantic-mobile,
+.ai-mobile,
+.threed-mobile,
+.connectivity-mobile,
+.ubiquity-mobile{
+    display: none;
+}
+
+.difference-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+.difference-title h3{
+    font-size: 36px;
+}
+
+
+#difference{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-top: 60px;
+}
+
+.rTable{
+    width: 100%;
+    text-align: center;
+}
+
+.rTable thead{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #c51f5d;
+    height: 50px;
+}
+
+.rTable tbody tr{
+    font-size: 22px;
+    background-color: #777777;
+    height: 60px;
+}
+
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background: #c51f5d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.creditos{
+    margin-top: 20px;
+}
+
+.creditos a {
+    font-size: 18px;
+}
+
+.footer-socials{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+
+.footer-socials a{
+    font-size: 28px;
+    color: #ffff;
+    margin: 10px;
+}
+
+
+button{
+    cursor: pointer;
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 14px;
+    right: 14px;
+    
+
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: #c51f5d;
+}
+
+button a{
+    font-size: 26px;
+    color: #ffff;
+}
+
+
+
+@media (max-width: 900px) {
+
+    header{
+        height: 50px;
+        background-color: #c51f5d;
+    }
+
+    .logo a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px; 
+        font-weight: bolder;
+        margin-top: 10px;
+    }
+
+    .welcome{
+        display:none;
+    }
+
+
+    .first-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 40px;
+    }
+    
+    .first-title h1{
+        text-align: center;
+        font-size: 24px;
+    }
+
+
+    #web1{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 0px;
+    }
+    
+    #web1 .web1-img{
+        display: none;
+    } 
+    
+    #web1 .web1-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    #web1 .web1-text h2{
+        display: none;
+    }
+
+    #web1 .web1-title-mobile{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    #web1 .web1-title-mobile h4{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 22px;
+        color: #c51f5d;
+    }
+    
+    #web1 .web1-text p{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    #web1 .web1-text h3{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    
+    #web1 .web1-list{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    
+    #web1 .web1-list li p{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    #web2{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 80px;
+    }
+    
+    #web2 .web2-img{
+        display: none;
+    } 
+    
+    #web2 .web2-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 0;
+    }
+    
+    #web2 .web2-text h2{
+        display: none;
+    }
+
+    #web2 .web2-title-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    #web2 .web2-title-mobile h4{
+        display: flex;
+        font-size: 22px;
+        text-align: center;
+        color: #c51f5d;
+        
+    }
+    
+    #web2 .web2-text p{
+        display: flex;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    #web2 .web2-text h3{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    
+    #web2 .web2-list{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    
+    #web2 .web2-list li p{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    #web3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 80px;
+    }
+    
+    #web3 .web3-text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    #web3 .web3-text h2{
+        display: none;
+    }
+
+    #web3 .web3-title-mobile{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    #web3 .web3-title-mobile h4{
+        display: flex;
+        font-size: 22px;
+        justify-content: center;
+        color: #c51f5d;
+    }
+    
+    #web3 .web3-text p{
+        text-align: center;
+        display: flex;
+        font-size: 16px;
+    }
+
+    #web3 .web3-examples h3{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .web3-semantic,
+    .web3-ai,
+    .web3-3d,
+    .web3-connectivity,
+    .web3-ubiquity
+    {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .web3-semantic-text,
+    .web3-ai-text,
+    .web3-3d-text,
+    .web3-connectivity-text,
+    .web3-ubiquity-text
+    {
+        display: flex;
+        flex-direction: column;
+        width: 750px;
+    }
+    .web3-semantic-text h3,
+    .web3-ai-text h3,
+    .web3-3d-text h3,
+    .web3-connectivity-text h3,
+    .web3-ubiquity-text h3{
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .web3-semantic-text p,
+    .web3-ai-text p,
+    .web3-3d-text p,
+    .web3-connectivity-text p,
+    .web3-ubiquity-text p{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+    }
+    
+    .semantic-img,
+    .ai-img,
+    .threed-img,
+    .connectivity-img,
+    .ubiquity-img
+    {
+     display:none;
+    }
+
+    .semantic-mobile,
+    .ai-mobile,
+    .threed-mobile,
+    .connectivity-mobile,
+    .ubiquity-mobile{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    }
+
+    .semantic-mobile img,
+    .ai-mobile img,
+    .threed-mobile img,
+    .connectivity-mobile img,
+    .ubiquity-mobile img{
+        display: flex;
+        justify-content: center;
+        width: 140px;
+        height: 140px;
+    }
+
+    
+    .difference-title{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .difference-title h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    
+    #difference{
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        margin-bottom: 80px;
+    }
+    
+    .rTable{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .rTable thead{
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #c51f5d;
+        height: 30px;
+    }
+    
+    .rTable tbody tr{
+        font-size: 14px;
+        background-color: #777777;
+        height: 40px;
+    }
+
+    button{
+        width: 42px;
+        height: 42px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        position: fixed;
+        bottom: 8px;
+        right: 8px;
+        
+    
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        background-color: #c51f5d;
+    }
+    
+    button:hover{
+        color: #141d26;
+    }
+    
+    button a{
+        font-size: 16px;
+        color: #ffff;
+    }
+
+}
